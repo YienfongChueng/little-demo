@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H5实战</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="./css/base.css" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    </head>
+    <body>
+        <!-- BEM 设计模式
+            模块（没有前缀，多个单词用 - 连接）
+            元素（元素在模块之后，可以有多个层级，以 __ 连接）
+            修饰（某元素、或者某模块特别的状态，必须有一个状态名和状态值，使用 _ 链接） -->
+        <div class="wrapper">
+            <!--header-->
+            <header class="header header_animate_init">
+                <div class="header__logo">H5实战页面</div>
+                <nav class="header__nav">
+                    <a href="javascript:void(0);" class="header__nav__item" >实战课程</a>
+                    <a href="javascript:void(0);" class="header__nav__item" >商业实例</a>
+                    <a href="javascript:void(0);" class="header__nav__item" >课程体系</a>
+                    <a href="javascript:void(0);" class="header__nav__item" >集成环境</a>
+                    <a href="javascript:void(0);" class="header__nav__item" >云端学习</a>
+                    <a href="javascript:void(0);" class="header__nav__item header__nav__item_study_btn" >即刻学习</a>
+                    <div class="header__nav__tip"></div>
+                </nav>
+            </header>
+            <!--screen-1-->
+            <div class="screen-1">
+                <h2 class="screen-1__title screen-1__title_animate_init">实战课程重磅上线</h2>
+                <h3 class="screen-1__subtitle screen-1__subtitle_animate_init">一键云学习，还等待什么？</h3>
+                <div class="screen-1__bg"></div>
+            </div>
+            <!--screen-2-->
+            <div class="screen-2">
+                <h2 class="screen-2__title">每门课都是真是商业案例</h2>
+                <div class="screen-2__line"></div>
+                <h3 class="screen-2__subtitle">
+                    真实案例，真实场景，在实战中实践、操作、调试<br/>
+                    大牛带你体验BAT真实开发流程，所有开发过程一一为你呈现
+                </h3>
+                <div class="screen-2__bg">
+                    <div class="screen-2__bg-1"></div>
+                    <div class="screen-2__bg-2"></div>
+                </div>
+            </div>
+            <!--screen-3-->
+            <div class="screen-3">
+                <div class="screen-3__bg-wrap">
+                    <div class="screen-3__bg"></div>
+                </div>
+                <div class="screen-3__wrap">
+                    <h2 class="screen-3__title">强大的语言课程体系支持</h2>
+                    <div class="screen-3__line"></div>
+                    <h3 class="screen-3__subtitle">
+                        学习环境与课程体系轻松对接，安装、调试、写入、部署、运行，一站解决
+                        <br/>，让你体验开发全流程
+                    </h3>
+                    <div class="screen-3__language">
+                        <span class="screen-3__language__item screen-3__language__html">HTML5</span>
+                        <span class="screen-3__language__item screen-3__language__php">PHP</span>
+                        <span class="screen-3__language__item screen-3__language__java">JAVA</span>
+                        <span class="screen-3__language__item screen-3__language__python">Python</span>
+                        <span class="screen-3__language__item screen-3__language__nodejs">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <!--screen-4-->
+            <div class="screen-4">
+                <h2 class="screen-4__title">省去本地复杂的环境搭建</h2>
+                <div class="screen-4__line"></div>
+                <h3 class="screen-4__subtitle">你可以告别在虚拟机中调试开发</h3>
+                <div class="screen-4__wrap">
+                    <div class="screen-4__item screen-4__item-1">
+                        <div class="screen-4__item__i-1"></div>
+                        <p class="screen-4__item__text screen-4__item__text-1">实战课程集成开发环境</p>
+                    </div>
+                    <div class="screen-4__item screen-4__item-2">
+                        <div class="screen-4__item__i-2"></div>
+                        <p class="screen-4__item__text screen-4__item__text-2"> 内置终端命令</p>
+                    </div>
+                    <div class="screen-4__item screen-4__item-3">
+                        <div class="screen-4__item__i-3"></div>
+                        <p class="screen-4__item__text screen-4__item__text-3">编译你的应用</p>
+                    </div>
+                    <div class="screen-4__item screen-4__item-4">
+                        <div class="screen-4__item__i-3"></div>
+                        <p class="screen-4__item__text screen-4__item__text-3">通过云端服务输出效果</p>
+                    </div>
+                </div>
+            </div>
+            <!--screen-5-->
+            <div class="screen-5">
+                <div class="screen-5__bg"></div>
+                <h2 class="screen-5__title">云端学习可以这样简单</h2>
+                <div class="screen-5__line"></div>
+                <h3 class="screen-5__subtitle">看视频，敲代码，一气呵成。结合慕课网为你提供的云端学习工具，所见即所得。从此学习不一样</h3>
+            </div>
+            <!--continue study-->
+            <div class="screen-6">
+                <div class="screen-6__study_btn">继续了解学习</div>
+            </div>
+            <!--footer-->
+            <footer class="footer">
+                <div class="footer__wrap">
+                    <ul class="footer__list">
+                        <li class="footer__item">网站首页</li>
+                        <li class="footer__item">人才招聘</li>
+                        <li class="footer__item">联系我们</li>
+                        <li class="footer__item">高校联盟</li>
+                        <li class="footer__item">关于我们</li>
+                        <li class="footer__item">讲师招募</li>
+                        <li class="footer__item">意见反馈</li>
+                        <li class="footer__item">友情链接</li>
+                    </ul>
+                    <div class="footer__rights">
+                        <span class="footer__rights-text">
+                            Copyright &copy; 2020 imooc.com All Rights Reserved | 京ICP备 13046642号-2
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            <div class="outline">
+                <a href="javascript:;" class="outline__item">实战</a>
+                <a href="javascript:;" class="outline__item">案例</a>
+                <a href="javascript:;" class="outline__item">课程</a>
+                <a href="javascript:;" class="outline__item">环境</a>
+                <a href="javascript:;" class="outline__item">学习</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
