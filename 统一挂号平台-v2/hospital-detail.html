@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>按医院挂号</title>
+        <meta charset='utf-8' />
+        <link rel='stylesheet' href='./css/layout.css' type='text/css'>
+        <link rel='stylesheet' href='./css/base.css' type='text/css'>
+        <link rel='stylesheet' href='./css/ui.css' type='text/css'>
+        <link rel='stylesheet' href='./css/hospital-detail.css' type='text/css'>
+        <script src='./js/jquery-1.7.1.min.js' type='text/javascript'></script>
+        <script src='./js/ui.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <div class="top" id="top">
+            <div class="wrap">
+                <p class="top__call">010-114/116114预约电话</p>
+                <p class="top__welcome">
+                    欢迎来到城市预约挂号统一平台&nbsp;请&nbsp;
+                    <a href="#" >登 陆</a>
+                    <a href="#" >注 册</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" >帮助中心</a>
+                </p>
+            </div>
+        </div>
+        <div class="header" id="header">
+            <div class="wrap">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="城市预约挂号统一平台">
+                </div>
+                <div class="header__search ui-search">
+                    <div class="ui-search-selected">医院</div>
+                    <div class="ui-search-select-list">
+                        <a href="#1">科室</a>
+                        <a href="#1">疾病</a>
+                        <a href="#1">医院</a>
+                    </div>
+                    <input type="text" name="search-content" class="ui-search-input" placeholder="请输入搜索内容">
+                    <a href="#" class="ui-search-submit">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav" id="nav">
+            <div class="wrap">
+                <div class="nav__link nav__menu">
+                    全部科室
+                    <div class="nav__menu-list ui-menu">
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">内科</a>
+                            <a href="#" class="ui-menu-item-disease">高血压</a>
+                            <a href="#" class="ui-menu-item-disease">冠心病</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">内科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">心脑血管科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见内科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">心脑血管科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                            <a href="#">心血管内科</a>
+                                            <a href="#">神经内科</a>
+                                            <a href="#">内分泌科</a>
+                                            <a href="#">血液科</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">外科</a>
+                            <a href="#" class="ui-menu-item-disease">肾结石</a>
+                            <a href="#" class="ui-menu-item-disease">脑外伤</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">外科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">肾结石</a>
+                                            <a href="#">脑外伤</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">肾结石</a>
+                                            <a href="#">脑外伤</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">肾结石</a>
+                                            <a href="#">脑外伤</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">肾结石</a>
+                                            <a href="#">脑外伤</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见外科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">肾结石</a>
+                                        <a href="#">脑外伤</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">肾结石</a>
+                                        <a href="#">脑外伤</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">肾结石</a>
+                                        <a href="#">脑外伤</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">肾结石</a>
+                                        <a href="#">脑外伤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">妇产科</a>
+                            <a href="#" class="ui-menu-item-disease">阴道炎</a>
+                            <a href="#" class="ui-menu-item-disease">不孕不育</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">妇产科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">阴道炎</a>
+                                            <a href="#">不孕不育</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">白带异常</a>
+                                            <a href="#">乳房胀痛</a>
+                                            <a href="#">月经推迟</a>
+                                            <a href="#">阴道炎</a>
+                                            <a href="#">不孕不育</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">白带异常</a>
+                                            <a href="#">乳房胀痛</a>
+                                            <a href="#">月经推迟</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见妇科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">阴道炎</a>
+                                        <a href="#">不孕不育</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">白带异常</a>
+                                        <a href="#">乳房胀痛</a>
+                                        <a href="#">月经推迟</a>
+                                        <a href="#">阴道炎</a>
+                                        <a href="#">不孕不育</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">白带异常</a>
+                                        <a href="#">乳房胀痛</a>
+                                        <a href="#">月经推迟</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">生殖中心</a>
+                            <a href="#" class="ui-menu-item-disease">男性不育</a>
+                            <a href="#" class="ui-menu-item-disease"></a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">生殖中心</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">儿科</a>
+                            <a href="#" class="ui-menu-item-disease">小儿感冒</a>
+                            <a href="#" class="ui-menu-item-disease">发烧</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">儿科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">骨外科</a>
+                            <a href="#" class="ui-menu-item-disease">关节炎</a>
+                            <a href="#" class="ui-menu-item-disease">骨折</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">骨外科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">关节炎</a>
+                                            <a href="#">骨折</a>
+                                            <a href="#">风湿</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">眼科</a>
+                            <a href="#" class="ui-menu-item-disease">近视</a>
+                            <a href="#" class="ui-menu-item-disease">白内障</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">眼科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">近视</a>
+                                            <a href="#">白内障</a>
+                                            <a href="#">青光眼</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">口腔科</a>
+                            <a href="#" class="ui-menu-item-disease">口腔修复</a>
+                            <a href="#" class="ui-menu-item-disease">牙痛</a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">口腔科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">口腔修复</a>
+                                            <a href="#">牙痛</a>
+                                            <a href="#">补牙</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">耳鼻喉科颈科</a>
+                            <a href="#" class="ui-menu-item-disease">鼻炎</a>
+                            <a href="#" class="ui-menu-item-disease"></a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">耳鼻喉科颈科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">鼻炎</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">常见疾病</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">a疾病</a>
+                                        <a href="#">b疾病</a>
+                                        <a href="#">d疾病</a>
+                                        <a href="#">e疾病</a>
+                                        <a href="#">a疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">肿瘤科</a>
+                            <a href="#" class="ui-menu-item-disease">癌痛</a>
+                            <a href="#" class="ui-menu-item-disease"></a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">肿瘤科</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">癌痛</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-menu-item">
+                            <a href="#" class="ui-menu-item-department">其他科室</a>
+                            <a href="#" class="ui-menu-item-disease"></a>
+                            <a href="#" class="ui-menu-item-disease"></a>
+                            <div class="ui-menu-item-detail">
+                                <div class="ui-menu-item-detail-group">
+                                    <div class="ui-menu-item-detail-group-title">其他科室</div>
+                                    <div class="ui-menu-item-detail-group-list">
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">a疾病</a>
+                                            <a href="#">b疾病</a>
+                                            <a href="#">d疾病</a>
+                                            <a href="#">e疾病</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="nav__link nav__link_active">按医院挂号</a>
+                <a href="#" class="nav__link">按科室挂号</a>
+                <a href="#" class="nav__link">按疾病挂号</a>
+                <a href="#" class="nav__link">最新公告</a>
+                <a href="#" class="nav__link nav__link_right">社会知名医院</a>
+            </div>
+        </div>
+        <!--主要内容-->
+        <div class="main">
+            <!--医院简介区域-->
+            <div class="main-desc">
+                <div class="main-desc__title">
+                    <div class="main-desc__title_fl">
+                        北京协和医院
+                        <a>关注医院</a>
+                    </div>
+                    <div class="main-desc__title_fr">
+                        <span class="label">等级：</span>
+                        <span class="name">三级甲等</span>
+                        <span class="label">区域：</span>
+                        <span class="name">东城区</span>
+                        <span class="label">分类：</span>
+                        <span class="name">中国医科院所属医院</span>
+                    </div>
+                </div>
+                <div class="main-desc__wrap">
+                    <img class="hospital" src="./img/hospital-1.jpg" alt="北京协和医院">
+                    <div class="main-desc__wrap-text">
+                        <p class="addr">[东院]北京市东城区帅府园一号&nbsp;[西园]北京市西城区大木仓胡同41号</p>
+                        <p class="website">http://www.punch.cn/</p>
+                        <p class="call">东院咨询台：010-69155564；西院咨询台：010-69158010</p>
+                        <p class="traffic">
+                            东院：106，110，111，116，684到东单路口北；
+                            41，104快，814到东单路口南；
+                            1，52，728，602到东单路口西；
+                            20，25，37，39到东单路口东；
+                            103，104，420，803到新东安市场；
+                            地铁1、5号线到东单。
+                            西院：68到劈材胡同东口；更多乘车路线详见须知
+                        </p>
+                    </div>
+                    <img class="map" src="./img/map-1.png" alt="">
+                </div>
+            </div>
+            <!--医院体系区域-->
+            <div class="main-detail ui-tab">
+                <!--tab选项卡-->
+                <div class="main-detail__tab">
+                    <a href="#" class="active">预约挂号</a>
+                    <a href="#">医院介绍</a>
+                    <a href="#">预约须知</a>
+                    <a href="#">停诊信息</a>
+                    <a href="#">查询取消</a>
+                </div>
+                <!--tab选项内容-->
+                <!--挂号预约tab-->
+                <div class="main-detail__block clearfix">
+                    <div class="main-detail__block-fl">
+                        <div class="caption">开放预约科室</div>
+                        <div class="item">
+                            <div class="item-block clearfix">
+                                <div class="item-block_fl">2031</div>
+                                <div class="item-block_fr">
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                    <a href="./hospital-detail-scheduling.html">特殊门诊科</a>
+                                </div>
+                            </div>
+                            <div class="item-block clearfix">
+                                <div class="item-block_fl">专科</div>
+                                <div class="item-block_fr">
+                                    <a href="./hospital-detail-scheduling.html">多发性硬化专科</a>
+                                    <a href="./hospital-detail-scheduling.html">门诊麻醉科</a>
+                                    <a href="./hospital-detail-scheduling.html">门诊麻醉科</a>
+                                    <a href="./hospital-detail-scheduling.html">多发性硬化专科</a>
+                                    <a href="./hospital-detail-scheduling.html">门诊麻醉科</a>
+                                    <a href="./hospital-detail-scheduling.html">多发性硬化专科</a>
+                                    <a href="./hospital-detail-scheduling.html">门诊麻醉科</a>
+                                    <a href="./hospital-detail-scheduling.html">多发性硬化专科</a>
+                                </div>
+                            </div>
+                            <div class="item-block clearfix">
+                                <div class="item-block_fl">内科</div>
+                                <div class="item-block_fr">
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                </div>
+                            </div>
+                            <div class="item-block clearfix">
+                                <div class="item-block_fl">外科</div>
+                                <div class="item-block_fr">
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                    <a href="./hospital-detail-scheduling.html">肿瘤内科门诊</a>
+                                    <a href="./hospital-detail-scheduling.html">特需血液内科</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-detail__block-fr">
+                        <div class="caption">
+                            预约规则
+                            <span>(更新时间每日8:30更新)</span>
+                        </div>
+                        <div class="item">
+                            <div class="item-block">
+                                <span class="lable">预约周期：</span>
+                                <span class="name">7天</span>
+                            </div>
+                            <div class="item-block">
+                                <span class="lable">放号时间：</span>
+                                <span class="name">8:30</span>
+                            </div>
+                            <div class="item-block">
+                                <span class="lable">停挂时间：</span>
+                                <span class="name">下午14:00停止次日预约挂号<br/>
+                                    <span class="break">
+                                        (周五14:00后停挂至下周一)
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="item-block">
+                                <span class="lable">退号时间：</span>
+                                <span class="name">就诊前一工作日14:00前取消</span>
+                            </div>
+                            <div class="item-block">
+                                <span class="lable">特殊规则：</span>
+                                <div class="name">
+                                        1.取号地点不同：
+                                        西院区预约号取号地点：西院区门诊楼楼一层大厅挂号窗口取号。
+                                        东院区预约号取号地点：东院区老门诊楼一层大厅挂号窗口或门诊楼各楼层挂号/收费窗口取号。
+                                        <br/>2.取号xxx不同：
+                                        西院区预约号取号地点：西院区门诊楼楼一层大厅挂号窗口取号。
+                                        东院区预约号取号地点：东院区老门诊楼一层大厅挂号窗口或门诊楼各楼层挂号/收费窗口取号。
+                                        <br/>3.取号yyy不同：
+                                        西院区预约号取号地点：西院区门诊楼楼一层大厅挂号窗口取号。
+                                        东院区预约号取号地点：东院区老门诊楼一层大厅挂号窗口或门诊楼各楼层挂号/收费窗口取号。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--医院简介tab-->
+                <div class="main-detail__block" style="display: none;">
+                    <p>北京协和医院（Peking Union Medical College Hospital）是一所位于北京市东城区，集医疗、科研、教学为一体的大型综合医院。它隶属于中国协和医科大学(2006年改为北京协和医学院/清华大学医学部)，是其临床医学院，同时也是中国医学科学院的临床医学研究所，是国家卫生健康委指定的全国疑难重症诊治指导中心。北京协和医院在中国乃至世界享有盛名。医院成立于1921年。现任院长赵玉沛。北京协和医院是中国最早承担外宾医疗任务的单位，医院专门设立外宾和高干门诊部，开设专门的高干、外宾、特需病区。2006年7月28日被中国奥委会定为“国家队运动员医疗服务指定医院”。</p>
+                    <p>2017年11月11日下午，复旦大学医院管理研究所正式发布了《2016年度中国医院排行榜》和《2016年度中国医院专科声誉排行榜》，北京协和医院名列榜首 。</p>
+                    <p>2018年12月4日消息，被国家卫健委公布为首批肿瘤多学科诊疗试点医院。2019年11月10日，复旦版《2018年度中国医院排行榜》发布，北京协和居首。2020年4月，被列入北京市面向团体和个人提供新冠病毒核酸检测服务医疗机构名单。</p>
+                    <p>在职职工4000余名、两院院士5人、临床和医技科室53个、国家级重点学科20个、国家临床重点专科29个、博士点16个、硕士点29个、国家级继续医学教育基地6个、二级学科住院医师培养基地18个、三级学科专科医师培养基地15个。</p>
+                </div>
+                <!--预约须知tab-->
+                <div class="main-detail__block" style="display: none;">
+                    <h1 class="title">北京协和医院预约挂号须知</h2>
+                    <h3 class="subtitle-call">电话预约挂号：010-114（24小时）</h3>
+                    <h3 class="subtitle">网络预约挂号：http:www/bjguahao.gov.cn</h3>
+                    <p>根据卫生部8月5日同志和卫生局8月20日工作部署，北京协和医院已完成电话、网络预约挂号的流程建设，现将预约挂号、取号相关事项公布如下，请您认真阅读须知：</p>
+                    <ul class="artical-list">
+                        <li class="artical-item" >
+                            <h3 class="subtitle">一、预约时间范围：</h3>
+                            <ul class="item-list">
+                                <li class="line">您可预约7天内（试点）日间的副教授和住院医师等号源，节假日不安排预约号（含周六、周日）。</li>
+                                <li class="line">每天早8:30分开始放号，下午14:00停止次日预约挂号。</li>
+                                <li class="line">周五14:00停止至下周一。</li>
+                            </ul>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">二、预约实名制：</h3>
+                            <p>统一平台非 i 十年后预约和网上预约均采用失明注册预约，请您如实提供就诊人员等真实姓名、有效证件号（身份证、军官证、护照）、性别、电话、手机号码、病案号和协和就诊卡条形码上等ID号等有效基本信息。</p>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">三、预约取号：</h3>
+                            <ul class="item-list">
+                                <li class="line">预约成功后，请患者于就诊当日携带有效证件、预约识别码以及协和医院就诊卡到医院挂号窗口验证预约信息和取号，如验证不符则医院不能提供响应到诊疗服务。如果没有协和医院就诊卡，请先办好就诊卡后再取号。</li>
+                                <li class="line">取号时间：上午就诊患者，就诊当日早9:00以前取号。下午就诊患者，就诊当日下午12:00-13:30之间取号。过时未取号者，预约作废。</li>
+                                <li class="line">取号地点：西园区预约取号地点：西园区诊楼一层挂号窗口取号。东园区预约取号地点：东园区老门诊楼一层挂号窗口或新门诊各楼层挂号/收费窗口取号。</li>
+                            </ul>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">四、医生停诊：</h3>
+                            <p>如特殊情况医生停诊，给您造成的不便敬请谅解。医生历史停诊，工作人员会用电话方式及时通知您，请配合更改就诊日期或更换其他医生，请您保持电话畅通。</p>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">五、取消预约：</h3>
+                            <p>挂出的预约号码如办理退号，至少在就诊一工作日14:00前通过网站或114电话凭预约识别码进行取消。</p>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">六、爽约处理：</h3>
+                            <ul class="item-list">
+                                <li class="line">如预约成功后患者未能按时就诊且不办理取消预约号视为爽约。</li>
+                                <li class="line">一年内（自然年）无故爽约累计达到3次的爽约用户将自动进行系统爽约名单，此后3个月内将取消其预约挂号资格；一年内（自然年）累计爽约6次，取消6个月的预约挂号资格。</li>
+                            </ul>
+                        </li>
+                        <li class="artical-item" >
+                            <h3 class="subtitle">七、其他注意事项：</h3>
+                            <ul class="item-list">
+                                <li class="line">协和东园和西园都可以预约。</li>
+                                <li class="line">国际医疗部门诊、位干部们不对外预约。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--停诊信息tab-->
+                <div class="main-detail__block" style="display: none;">
+                    <table class="close-info">
+                        <tr>
+                            <td>日期</td>
+                            <td>星期</td>
+                            <td>时段</td>
+                            <td>科室</td>
+                            <td>特长</td>
+                            <td>职称</td>
+                            <td>挂号费</td>
+                            <td>可挂号数</td>
+                            <td>剩余号数</td>
+                            <td>替换方式</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-09</td>
+                            <td>1</td>
+                            <td>上午</td>
+                            <td>呼吸内科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-10</td>
+                            <td>5</td>
+                            <td>上午</td>
+                            <td>眼科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-13</td>
+                            <td>2</td>
+                            <td>上午</td>
+                            <td>变态反应科门诊</td>
+                            <td></td>
+                            <td>正教授</td>
+                            <td>9.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>3</td>
+                            <td>上午</td>
+                            <td>骨科门诊</td>
+                            <td></td>
+                            <td>主治医生</td>
+                            <td>5.00</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>不可替换</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--查询取消tab-->
+                <div class="main-detail__block" style="display: none;">
+                    <div class="main-detail__block-wrap">
+                        <span>预约识别码：</span>
+                        <input type="text" name="checkId" class="checkId"/>
+                        <input type="button" value="查询订单" class="search-checkId-btn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer" id="footer">
+            Copyright &copy; 2020 zyf 版权所有
+        </div>
+    </body>
+</html>

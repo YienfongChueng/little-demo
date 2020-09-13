@@ -1,0 +1,271 @@
+/*菜单显示与隐藏样式*/
+.nav__menu-list {
+    display: none;
+}
+.nav__menu:hover .nav__menu-list {
+    display: block;
+}
+
+
+/*主体内容*/
+/*医院简介*/
+.main-desc {
+    background: #f7f7f7;
+    margin:  30px 0;
+    padding: 16px 25px;
+}
+.main-desc__title {
+    height: 50px;
+    border-bottom: 2px solid #dcdddd;
+}
+.main-desc__title_fl {
+    float: left;
+    font-size: 16px;
+    color: #000;
+    line-height: 50px;
+}
+.main-desc__title_fl a {
+    font-size: 12px;
+    color: #f29600;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.main-desc__title_fr {
+    float: right;
+    font-size: 12px;
+    line-height: 50px;
+    color: #000;
+}
+.main-desc__title_fr .label {
+    color: #0000ff;
+}
+.main-desc__title_fr .name {
+    padding-right: 10px;
+}
+.main-desc__wrap {
+    position: relative;
+}
+
+.main-desc__wrap-text {
+    width: 450px;
+    padding: 25px 20px 0 240px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #888;
+}
+.main-desc__wrap-text p {
+    padding-bottom: 16px;
+    text-align: left;
+    position: relative;
+}
+.main-desc__wrap-text p::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -26px;
+    top: 3px;
+    background: url(../img/icon-web.png) no-repeat 0px 0px;
+}
+.main-desc__wrap-text .website::before {
+    background-position: 0 -21px;
+}
+.main-desc__wrap-text .call::before {
+    background-position: 0 center;
+}
+.main-desc__wrap-text .traffic::before {
+    background-position: 0 -63px;
+}
+.main-desc__wrap .hospital {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 200px;
+    height: 150px;
+}
+.main-desc__wrap .map {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 249px;
+    height: 170px;
+}
+
+/*医院体系区域*/
+.main-detail__tab {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    border-bottom: 2px solid #60bff2;
+}
+.main-detail__tab a {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    color: #00b3ec;
+}
+.main-detail__tab .active {
+    background: #60bff2;
+    color: #fff;
+}
+.main-detail__tab a:hover {
+    background: #60bff2;
+    color: #fff;
+}
+/*医院体系区域容器*/
+.main-detail__block {
+    padding: 20px 10px 80px 10px;
+    font-size: 14px;
+}
+/*左边的开放预约科室样式*/
+.main-detail__block-fl {
+    width: 708px;
+    float: left;
+}
+.main-detail__block-fl .item {
+    border: 1px solid #eee;
+}
+.main-detail__block-fl .item .item-block {
+    border-bottom: 1px solid #eee;
+}
+.main-detail__block-fl .item .item-block:last-child {
+    border: none;
+}
+.main-detail__block-fl .item .item-block .item-block_fl {
+    float: left;
+    width: 145px;
+    height: 92px;
+    background: #f2fbff;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding-top: 10px;
+}
+.main-detail__block-fl .item .item-block .item-block_fr {
+    float: left;
+    width: 530px;
+}
+.main-detail__block-fl .item .item-block .item-block_fr a {
+    display: inline-block;
+    width: 100px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #4c4948;
+    line-height: 30px;
+    cursor: pointer;
+}
+.main-detail__block-fl .item .item-block .item-block_fr a:hover {
+    color: #00b3ec;
+}
+
+.main-detail__block-fl .caption ,
+.main-detail__block-fr .caption{
+    height:44px;
+    line-height: 44px;
+    background: #f4f6fa;
+    color: #000;
+    font-size: 14px;
+    text-indent: 30px;
+}
+/*右边的预约规则*/
+.main-detail__block-fr {
+    width: 265px;
+    float: right;
+}
+.main-detail__block-fr .caption span {
+    padding-left: 10px;
+    color: #00b3ea;
+    font-size: 12px;
+}
+.main-detail__block-fr .item {
+    height: 223px;
+    overflow-y: scroll;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.main-detail__block-fr .item .lable {
+    color: #555;
+
+}
+.main-detail__block-fr .item .name {
+    color: #888;
+    line-height: 18px;
+}
+.main-detail__block-fr .item-block {
+    padding-bottom: 10px;
+}
+.main-detail__block-fr .item-block .break {
+    padding-left: 60px;
+}
+.main-detail__block-fr .item-block div {
+    padding-left: 60px;
+}
+/*医院介绍tab样式*/
+.main-detail__block p {
+    line-height: 30px;
+    text-indent:2em;
+}
+/*预约须知tab样式*/
+.main-detail__block .title{
+    text-align: center;
+}
+.main-detail__block .subtitle-call {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-detail__block .artical-list {
+    list-style: none;
+}
+.main-detail__block  .artical-item {
+    padding-top: 25px;
+    line-height: 25px;
+}
+.main-detail__block  .item-list {
+    list-style:decimal;
+    list-style-position: inside;
+}
+
+/*停诊信息tab样式*/
+.main-detail__block .close-info {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    border-collapse:collapse;
+}
+.main-detail__block .close-info td {
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+/*查询取消tab样式*/
+.main-detail__block  .main-detail__block-wrap  {
+    margin: 50px auto;
+    font-size: 14px;
+    color: #666;
+    padding: 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.main-detail__block  .main-detail__block-wrap .checkId {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+.main-detail__block  .main-detail__block-wrap .search-checkId-btn {
+    width: 100px;
+    height: 32px;
+    color: #fff;
+    background-color: #00b3ec;
+    border: none;
+    cursor: pointer;
+}
+.main-detail__block  .main-detail__block-wrap .search-checkId-btn:hover {
+    background: #60bff2;
+}

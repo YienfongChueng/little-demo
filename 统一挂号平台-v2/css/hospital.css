@@ -1,0 +1,179 @@
+/*菜单显示与隐藏样式*/
+.nav__menu-list {
+    display: none;
+}
+.nav__menu:hover .nav__menu-list {
+    display: block;
+}
+
+/*条件过滤部分样式*/
+.main-filter__item {
+    padding: 25px 60px;
+    font-size: 0;
+}
+.main-filter__item span {
+    font-size: 16px;
+    color: #4c4948;
+    padding-right: 40px;
+    vertical-align: middle;
+}
+.main-filter__item a {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 36px;
+    
+}
+.main-filter__item a>span {
+    display: inline-block;
+    padding: 0 11px;
+}
+.main-filter__item a::before {
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    border-left: 2px solid #dcdddd;
+    margin: 0 11px;
+}
+.main-filter__item a>span:hover {
+    background: #60bff2;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+} 
+.item_active span{
+    background: #60bff2;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*内容区域样式*/
+.main-content-item {
+    height: 160px;
+    padding: 45px 30px 45px 30px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.main-content-item:hover {
+    background: #f5fcff;
+}
+.main-content-item img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 30px;
+    top: 45px;
+}
+.main-content-item__wrap {
+    width: 400px;
+    float: left;
+    padding-left: 228px;
+    position: relative;
+}
+.main-content-item__btn {
+    float: right;
+    width: 110px;
+    height: 45px;
+    background: orange;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.main-content-item__btn:hover {
+    background: #f7b52c;
+}
+.main-content-item__title {
+    margin-top: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.main-content-item__title span {
+    color: #f7b52c;
+    font-size: 18px;
+    float: right;
+}
+.main-content-item__time,
+.main-content-item__phone,
+.main-content-item__addr {
+    font-size: 14px;
+    color: #888;
+    padding-left: 20px;
+    padding-top: 13px;
+}
+
+.main-content-item__time::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background: url(../img/icon-tel.png) no-repeat 5px -34px;
+    width: 22px;
+    height: 21px;
+    left: 220px;
+    top: 60px;
+}
+.main-content-item__phone::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background: url(../img/icon-tel.png) no-repeat 5px 3px;
+    width: 22px;
+    height: 21px;
+    left: 220px;
+    top: 94px;
+}
+.main-content-item__addr::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background: url(../img/icon-tel.png) no-repeat 5px -15px;
+    width: 22px;
+    height: 21px;
+    left: 220px;
+    top: 125px;
+}
+/*分页*/
+.main-page {
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 20px;
+}
+.ui-pagination {
+    position: relative;
+}
+.ui-pagination a {
+    margin: 0 10px;
+}
+.page-nums {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.ui-go-page {
+    width: 55px;
+    height: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 10px;
+}
+.page_active {
+    background: #1eb3ec;
+    color: #fff;
+}
+.page-nums:hover {
+    background: #1eb3ec;
+    color: #fff;
+}

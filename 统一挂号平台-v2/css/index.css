@@ -1,0 +1,201 @@
+select {
+    border: none;
+    outline: none;
+}
+.banner-search,
+.banner-help {
+    text-align: center;
+}
+.banner-search__title,
+.banner-help__title {
+    line-height: 21px;
+    padding: 15px 0 15px 0;
+}
+.banner-search__title span{
+    padding-left: 28px;
+    font-size: 16px;
+    color: #fec10e;
+    background: url(../img/icon-help.png) no-repeat 0 0 ;
+}
+.banner-help__title span {
+    padding-left: 28px;
+    font-size: 16px;
+    color: #4bd5ed;
+    background: url(../img/icon-help.png) no-repeat 0 -23px ;
+}
+.banner-search__block {
+    height: 26px;
+    padding-bottom: 10px ;
+}
+.banner-search__select {
+    width: 168px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #666;
+}
+.banner-search__btn {
+    text-align: center;
+    margin-top: 15px;
+}
+.banner-search__btn span {
+    display: inline-block;
+    width: 108px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #fec10e;
+    background: #fecd09;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-search__btn span:hover {
+    background: orange;
+}
+.banner-help__list {
+    text-align: center;
+}
+.banner-help__link {
+    display: inline-block;
+    font-size: 14px;
+    color: #4bd5ed;
+    padding: 8px 26px ;
+}
+.content-news__title,
+.content-close__title {
+    height: 39px;
+    line-height: 39px;
+    color: #fdc521;
+    text-indent: 16px;
+    font-size: 16px;
+    background: #f4f6fa;
+}
+.content-close__title {
+    color: #54b8ee;
+}
+.content-news__more,
+.content-close__more {
+    float: right;
+    color: #868686;
+    font-size: 12px;
+    padding-right: 20px;
+}
+.content-news__list,
+.content-close__list {
+    padding-top: 11px;
+    background: url(../img/list-yellow.jpg) no-repeat 18px 17px ;
+}
+.content-close__list {
+    background: url(../img/list-blue.jpg) no-repeat 18px 17px ;
+}
+.content-news__link,
+.content-close__link {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    line-height: 29px;
+    padding-left: 38px
+}
+
+.content-tab__caption {
+    height: 34px;
+    line-height: 34px;
+    background: #f4f6fa;
+    font-size: 0;
+}
+.content-tab__caption-item {
+    font-size: 14px;
+    color: #54b8ee;
+    display: inline-block;
+    width: 112px;
+    text-align: center;
+}
+.content-tab__caption-item_active {
+    background: #60bff2;
+    color: #fff;
+} 
+.block-item__caption {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #f4f6fa;
+    padding: 7px 0 10px 14px;
+    font-size: 0;
+}
+.block-item__caption-link {
+    display: inline-block;
+    font-size: 12px;
+    width: 50px;
+    padding: 0 10px;
+    text-align: center;
+    color: #666;
+}
+.block-item__caption-link_active {
+    background: #60bff2;
+    color: #fff;
+}
+
+.block-item__content-wrap {
+    padding-top: 17px;
+}
+.content-wrap__list1,
+.content-wrap__list2 {
+    padding-left: 12px;
+}
+.content-wrap__list2 {
+    padding-bottom: 15px;
+}
+.content-wrap__list1-item {
+    width: 221px;
+    height: 102px;
+    float: left;
+    position: relative;
+    padding: 0 20px 10px 120px;
+}
+.content-wrap__list1-item img {
+    width: 110px;
+    height: 98px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content-wrap__list1-item .item-name {
+    font-size: 14px;
+    color: #54b8ee;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.content-wrap__list1-item .item-level {
+    float: right;
+    color: #666;
+    font-size: 12px;
+}
+.content-wrap__list1-item .item-phone,
+.content-wrap__list1-item .item-addr {
+    font-size: 12px;
+    line-height: 21px;
+    color: #666;
+}
+
+.content-wrap__list2-item {
+    float: left;
+    width: 346px;
+    font-size: 12px;
+    color: #666;
+    line-height: 36px;
+    border-bottom: 1px dashed #ccc;
+}
+.content-wrap__list2-level {
+    float: right;
+}
+.content-wrap__list2-item:nth-child(2n) {
+    margin-left: 13px;
+}
+.content-wrap__more {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #54b8ee;
+}

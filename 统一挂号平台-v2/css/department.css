@@ -1,0 +1,93 @@
+/*菜单显示与隐藏样式*/
+.nav__menu-list {
+    display: none;
+}
+.nav__menu:hover .nav__menu-list {
+    display: block;
+}
+
+.main-classify__title {
+    background: url(../img/bg-department.jpg) no-repeat ;
+    color: #fff;
+    text-indent: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    border-bottom: 2px solid #1fa4f0;
+}
+.main-classify {
+    padding: 0px 50px 0px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.main-classify a {
+    display: inline-block;
+    font-size: 12px;
+    color: #555;
+    padding: 10px 40px 10px 10px;
+    width: 80px;
+}
+.main-classify .all {
+    position: absolute;
+    bottom: 15px;
+    right: 60px;
+    color: blue;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.main-warp__left a {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    padding: 10px 10px 5px 30px;
+    position: relative;
+}
+.main-warp__left a::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 7px;
+    background: url(../img/icon-menu.jpg) no-repeat 0px 0px ;
+    background-size: 200%;
+}
+.main-warp__left a:hover {
+    background-color: #1fa4f0;
+    color: #fff;
+}
+.main-warp__left a:hover::before {
+    background-position: -20px 0;
+}
+.main-warp__left a::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background: url(../img/icon-arrow-right.png) no-repeat center;
+    background-size: 50%;
+}
+
+.main-warp__right {
+    padding: 20px;
+}
+
+.main-wrap__right-item {
+    padding-bottom: 20px;
+}
+.main-wrap__right-item__title {
+    color: #1fa4f0;
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+.main-wrap__right-item__list a{
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
